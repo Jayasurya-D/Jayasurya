@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAYASURYA D - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: linear-gradient(120deg, #0a67c4, #d816df); /* Subtle gradient background */
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background: #444;
+            padding: 1em 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        section {
+            padding: 2em;
+            background: #ffffff;
+            margin: 2em auto;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for professional touch */
+            border-radius: 8px; /* Soft rounded corners */
+            max-width: 900px;
+        }
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        ul {
+            list-style: disc;
+            margin: 0;
+            padding-left: 1.5em;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 0.5em 1em;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1em;
+        }
+        .download-button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>JAYASURYA D</h1>
+            <p>ASSISTANT PROFESSOR</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>
+                I am an excellent team worker and am able to take instructions from all levels and build up good working relationships with all colleagues. I am flexible, reliable and possess excellent time-keeping skills. I am an enthusiastic, self-motivated, reliable, responsible, and hard-working person.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>Karpaga Vinayaga College of Engineering and Technology - MCA</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>JAVA CORE, JDBC</li>
+                <li>PYTHON</li>
+                <li>MySQL</li>
+                <li>HTML and CSS</li>
+                <li>Manual QA Testing</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <p>Suggestion Adjuration of a yield is fed into other intake through our anatomization</p>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content" style="text-align: center;">
+            <h2>Resume</h2>
+            <a href="JAYASURYA D.pdf" target="_blank" class="download-button">Download CV</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 JAYASURYA D</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20, // Adjust for header height
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
